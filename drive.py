@@ -15,13 +15,13 @@ from io import BytesIO
 from keras.models import load_model
 import h5py
 from keras import __version__ as keras_version
-
+import cv2
 sio = socketio.Server()
 app = Flask(__name__)
 model = None
 prev_image_array = None
 
-
+images = []
 class SimplePIController:
     def __init__(self, Kp, Ki):
         self.Kp = Kp
@@ -60,9 +60,15 @@ def telemetry(sid, data):
         # The current image from the center camera of the car
         imgString = data["image"]
         image = Image.open(BytesIO(base64.b64decode(imgString)))
-        image_array = np.asarray(image)
-        steering_angle = float(model.predict(image_array[None, :, :, :], batch_size=1))
-
+        image_array = np.array(image)
+        image_array  = image_array[50:140,:,:]
+        image_array = cv2.resize(image_array,(200, 66), interpolation = cv2.INTER_AREA)
+        image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2YUV)
+        transformed_image_array = image_array[None, :, :, :]
+        # This model currently assumes that the features of the model are just the images. Feel free to change this.
+        steering_angle = float(model.predict(transformed_image_array, batch_size=1)) 
+        #print(model.predict(transformed_image_array, batch_size=1))
+        #streering_angle = float(45.5);
         throttle = controller.update(float(speed))
 
         print(steering_angle, throttle)
