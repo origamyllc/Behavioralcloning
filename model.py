@@ -65,7 +65,6 @@ X_test -= 0.5
  
 
 model = Sequential()
-#model.add(Lambda(lambda x: (x / 255.0) - 0.5, input_shape=input_shape))
 model.add(Conv2D(24,5, 5,input_shape=input_shape,subsample=(2, 2), border_mode='valid', W_regularizer=l2(0.001)))
 model.add(ELU())
 model.add(Conv2D(36,5,5, subsample=(2, 2), border_mode='valid', W_regularizer=l2(0.001)))
@@ -97,5 +96,4 @@ model.fit(X_train, y_train,
           batch_size=batch_size,
           epochs=epochs,
           validation_data=(X_test, y_test))
-#model.fit(X_train,y_train,validation_split=0.2,shuffle=True,nb_epoch=12)
 model.save('init.h5')
