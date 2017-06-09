@@ -30,11 +30,11 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 | **Layer4**    | convolutional  |3 X 3         | 48            | 5 X 22 |
 | **Layer5**    | convolutional  |3 X 3         | 64            | 3 X 20 |
 | **Layer6**    | convolutional  |3 X 3         | 64            | 1 X 18 |
-| **Layer7**    | fully connected|None          | 100           | 1 x 18 X 100 |
-| **Layer9**    | fully connected|None          | 50            | 1 x 18 X 100 X 50 |
-| **Layer10**   | fully connected|None          | 10            | 1 x 18 X 100 X 50 X 10|
+| **Layer7**    | fully connected|None          | 100           | ( 1 x 18 )  X 100 |
+| **Layer9**    | fully connected|None          | 50            | ( 1 x 18 X 100 )  X 50 |
+| **Layer10**   | fully connected|None          | 10            |  ( 1 x 18 X 100 X 50 )  X 10|
 | **Layer11**   | Flatten        |None          | 10            | |
-| **Layer12**   | fully connected|None          | 1             | 1 x 18 X 100 X 50 X 10 |
+| **Layer12**   | fully connected|None          | 1             | (1 x 18 X 100 X 50 X 10 ) X 1 |
 
 after each layer I used an ELU(relu) activation function for further information on ELU activation refer 
 https://keras.io/layers/advanced-activations/#elu
