@@ -18,13 +18,13 @@ python drive.py init.h5
 
 In order to build the CNN required for the self driving vehcle I ended up using a variation of the architecture as explained in https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/ 
 
-The CNN has the following architecture 
+#### The CNN has the following architecture 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Layers        | Filter size   | Step size  |
+| ------------- |:-------------:| ----------:|
+| col 3 is      | right-aligned | $1600      |
+| col 2 is      | centered      |   $12      |
+| zebra stripes | are neat      |    $1      |
 
 
 ####2. Attempts to reduce overfitting in the model
