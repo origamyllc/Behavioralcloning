@@ -39,14 +39,16 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 after each layer I used an ELU(relu) activation function for further information on ELU activation refer 
 https://keras.io/layers/advanced-activations/#elu
 
-####. Model parameter tuning
+#### Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
 
-####. Attempts to reduce overfitting in the model
+#### Attempts to reduce overfitting in the model
 
 The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
+#### Changing drive.py to work with new image size
 
+#### Creating the output video
