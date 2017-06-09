@@ -13,6 +13,7 @@ The car can be driven autonomously around the track by executing
 python drive.py init.h5
 ```
 # Model Architecture and Training Strategy
+## 1. Data Preprocessing 
 
 ## 1. Model Architecture
 
@@ -34,6 +35,9 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 | **Layer10**   | fully connected|None          | 10            | 1 x 18 X 100 X 50 X 10|
 | **Layer11**   | Flatten        |None          | 10            | |
 | **Layer12**   | fully connected|None          | 1             | 1 x 18 X 100 X 50 X 10 |
+
+after each layer I used an ELU(relu) activation function for further information on ELU activation refer 
+https://keras.io/layers/advanced-activations/#elu
 
 ####2. Attempts to reduce overfitting in the model
 
