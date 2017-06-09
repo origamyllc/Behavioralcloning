@@ -43,7 +43,7 @@ https://keras.io/layers/advanced-activations/#elu
 
 1. The model used an adam optimizer, so the learning rate was not tuned manually .
 2. the model uses l2 regularization to reduce and control the gradient decent 
-3. The model is fit using batch sizes of 128 
+3. The model is fit using batch sizes of 128 to increase overall training performance  
 4. The number of epochs is set to 4 this allows to prevent overfitting 
 
 ## 3. Changing drive.py to work with new image size
