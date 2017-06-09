@@ -15,7 +15,7 @@ python drive.py init.h5
 # Model Architecture and Training Strategy
 ## 1. Data Preprocessing 
 
-## 1. Model Architecture
+## 2. Model Architecture
 
 In order to build the CNN required for the self driving vehcle I ended up using a variation of the architecture as explained in https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/ 
 
@@ -49,6 +49,6 @@ The model contains dropout layers in order to reduce overfitting (model.py lines
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-#### Changing drive.py to work with new image size
+## 3. Changing drive.py to work with new image size
 
-#### Creating the output video
+## 4. Creating the output video
