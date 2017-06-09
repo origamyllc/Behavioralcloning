@@ -18,6 +18,7 @@ python drive.py init.h5
 
 In order to build the CNN required for the self driving vehcle I ended up using a variation of the architecture as explained in https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/ 
 
+
 #### The CNN has the following architecture 
 
 | Layers        | Layer Type | Filter size   | deapth        | output shape |
