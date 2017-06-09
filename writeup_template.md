@@ -23,7 +23,7 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 | Layers        | Layer Type | Filter size   | deapth        | 
 | ------------- |:-------------:|:-------------:| -------------:|
 | **Layer1**    | input          |None          | 3             |
-| **Layer2**    | convolutional  |5 X 5         | 24           |
+| **Layer2**    | convolutional  |5 X 5         | 24            |
 | **Layer3**    | convolutional  |5 X 5         | 36            |
 
 
