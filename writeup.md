@@ -13,8 +13,18 @@ The car can be driven autonomously around the track by executing
 python drive.py init.h5
 ```
 # Model Architecture and Training Strategy
-## 1. Data Preprocessing 
 
+## 1. Data Preprocessing 
+ #### the following image preprocessing steps were taken for each input image 
+ 1. Crop the image to remove the vehicke and sky from the image and thus increasing the image focus to include only the road
+ 2. Reshape the image to 200 X 60 size recomended by Nvidia
+ 3. convert the image to YUV space 
+ 4. Split the data set into training and test sets 
+ 5. Normalize the image by deviding each value with 255 and substracting a mean of 0.5 from the result 
+ 
+ #### Data augmentation
+ Flip the image and negate the steering angle and add it to the dataset for image augmentation 
+ 
 ## 2. Model Architecture
 
 In order to build the CNN required for the self driving vehcle I ended up using a variation of the architecture as explained in https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/ 
