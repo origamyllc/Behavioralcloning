@@ -1,6 +1,4 @@
-##Files Submitted & Code Quality
-
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+# Files Submitted 
 
 My project includes the following files:
 * model.py containing the script to create and train the model
