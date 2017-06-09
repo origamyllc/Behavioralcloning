@@ -41,13 +41,10 @@ https://keras.io/layers/advanced-activations/#elu
 
 #### Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
-
-#### Attempts to reduce overfitting in the model
-
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
-
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+1. The model used an adam optimizer, so the learning rate was not tuned manually .
+2. the model uses l2 regularization to reduce and control the gradient decent 
+3. The model is fit using batch sizes of 128 
+4. The number of epochs is set to 4 this allows to prevent overfitting 
 
 ## 3. Changing drive.py to work with new image size
 
