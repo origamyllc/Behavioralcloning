@@ -3,13 +3,15 @@
 My project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network 
+* init.h5 containing a trained convolution neural network 
+* run1.mp4 containing a video of the output
+* video.py containing a script to create a video
 * writeup_report.md or writeup_report.pdf summarizing the results
 
 ####2. Submission includes functional code
 Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
 ```sh
-python drive.py model.h5
+python drive.py init.h5
 ```
 
 ####3. Submission code is usable and readable
