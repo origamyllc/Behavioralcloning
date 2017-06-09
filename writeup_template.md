@@ -20,7 +20,12 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 
 The CNN has the following architecture 
 
-#### Layer 1  3@66 X 200
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 
 ####2. Attempts to reduce overfitting in the model
 
