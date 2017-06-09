@@ -20,7 +20,7 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 
 The CNN has the following architecture 
 
-# Layer 1  3@66 X 200
+#### Layer 1  3@66 X 200
 
 ####2. Attempts to reduce overfitting in the model
 
