@@ -14,7 +14,7 @@ python drive.py init.h5
 ```
 # Model Architecture and Training Strategy
 
-####1. An appropriate model architecture has been employed
+#### 1. Model Architecture
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
 
