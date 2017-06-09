@@ -14,13 +14,13 @@ python drive.py init.h5
 ```
 # Model Architecture and Training Strategy
 
-#### 1. Model Architecture
+## 1. Model Architecture
 
 In order to build the CNN required for the self driving vehcle I ended up using a variation of the architecture as explained in https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/ 
 
 The CNN has the following architecture 
 
-Layer 1  24   Filters of size 5X5   with step size 2
+# Layer 1  3@66 X 200
 
 ####2. Attempts to reduce overfitting in the model
 
