@@ -16,9 +16,11 @@ python drive.py init.h5
 
 #### 1. Model Architecture
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+In order to build the CNN required for the self driving vehcle I ended up using a variation of the architecture as explained in https://devblogs.nvidia.com/parallelforall/deep-learning-self-driving-cars/ 
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+The CNN has the following architecture 
+
+Layer 1  24   Filters of size 5X5   with step size 2
 
 ####2. Attempts to reduce overfitting in the model
 
