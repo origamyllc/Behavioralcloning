@@ -20,11 +20,11 @@ In order to build the CNN required for the self driving vehcle I ended up using 
 
 #### The CNN has the following architecture 
 
-| Layers        | Filter size   | Step size  |
-| ------------- |:-------------:| ----------:|
-| col 3 is      | right-aligned | $1600      |
-| col 2 is      | centered      |   $12      |
-| zebra stripes | are neat      |    $1      |
+| Layers        | Layer Type | Filter size   | deapth        | 
+| ------------- |:-------------:|:-------------:| -------------:|
+| **Layer1**    | input          |None          | 3             |
+| **Layer2**    | convolutional  |5 X 5         | 24           |
+| **Layer3**    | convolutional  |5 X 5         | 36            |
 
 
 ####2. Attempts to reduce overfitting in the model
