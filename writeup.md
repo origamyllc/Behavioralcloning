@@ -63,4 +63,5 @@ https://keras.io/layers/advanced-activations/#elu
  4. Predict the steering angle 
  
 ## 4. Creating the output video
+To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
