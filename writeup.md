@@ -56,6 +56,8 @@ https://keras.io/layers/advanced-activations/#elu
 3. The model is fit using batch sizes of 128 to increase overall training performance  
 4. The number of epochs is set to 4 this allows to prevent overfitting 
 
+The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+
 ## 3. Changing drive.py to work with new image size
  1. The incoming image is cropped so that only the road is visible 
  2. Resize the image to nvidia size 
