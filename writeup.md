@@ -57,5 +57,10 @@ https://keras.io/layers/advanced-activations/#elu
 4. The number of epochs is set to 4 this allows to prevent overfitting 
 
 ## 3. Changing drive.py to work with new image size
-
+ 1. The incoming image is cropped so that only the road is visible 
+ 2. Resize the image to nvidia size 
+ 3. convert the image space from RGB to YUV 
+ 4. Predict the steering angle 
+ 
 ## 4. Creating the output video
+
